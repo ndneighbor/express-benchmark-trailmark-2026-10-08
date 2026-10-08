@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="auth"><span class="eyebrow">GET STARTED</span><h1>Make it yours.</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>Create account</button></form><a href="{% url 'login' %}">Already have an account?</a></section>{% endblock %}
